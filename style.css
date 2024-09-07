@@ -1,7 +1,7 @@
 /*Importa a fonte tematica*/
 @font-face {
     font-family: royale;
-    src: url(/biblioteca-royale/Clash-Royale-Font/You\ Blockhead.ttf);
+    src: url(./Clash-Royale-Font/royale.ttf);
 }
 
 /*"Reset do css" e cor de fundo do corpo da página*/
@@ -14,7 +14,7 @@ body{
 /*aplicação e posicionamento do fundo de tela no banner da pagina*/
 header{
     height: 40rem;
-    background-image: url(/biblioteca-royale/illustrations/5430634-clash-royale-video-game-golden-knight.jpg);
+    background-image: url(./illustrations/5430634-clash-royale-video-game-golden-knight.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
