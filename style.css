@@ -1,0 +1,215 @@
+/*Importa a fonte tematica*/
+@font-face {
+    font-family: royale;
+    src: url(/biblioteca-royale/Clash-Royale-Font/You\ Blockhead.ttf);
+}
+
+/*"Reset do css" e cor de fundo do corpo da página*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0460D9;
+}
+
+/*aplicação e posicionamento do fundo de tela no banner da pagina*/
+header{
+    height: 40rem;
+    background-image: url(/biblioteca-royale/illustrations/5430634-clash-royale-video-game-golden-knight.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    display: flex;
+    flex-direction: column;
+}
+/*padronização de fonte*/
+main{
+    font-family: royale;
+}
+/*posicionamento e gradiente da barra de cabecalho*/
+.cabecalho{
+    height: 70px;
+    background-image: linear-gradient(#20547e,#328dd39a);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.logo{
+    width: 110px;
+    margin-left: 6rem;
+}
+
+.pfp{
+    width: 45px;
+    height: 45px;
+    margin-right: 1rem;
+}
+/*mensagem de boas vindas ao usuario*/
+.profile{
+    display: flex;
+    margin-right: 3rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+}
+
+h1{
+    font-family: royale;
+    color: #F1EEEC;
+    font-size: 3rem;
+    margin-top: 3rem;
+    text-shadow: 
+    1px -1px 0px black, 
+    -3px 3px 0px black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*secao de busca*/
+.busca{
+    width: 80%;
+    height: 10rem;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8rem;
+    box-shadow: 
+    1px -1px 0px black, 
+    -3px 3px 0px black;
+    margin-bottom: 10rem;
+
+}
+
+.img-busca{
+    width: 300px;
+}
+
+.campo-busca{
+    width: 50%;
+}
+
+.input-busca{
+    border-radius: 50px;
+    height: 35px;
+    margin-right: 6px;
+    width: 60%;
+    border-color: rgb(191, 197, 203);
+    background-color: #f4f0eb;
+    font-family: royale;
+    font-size: smaller;
+}
+
+h2{
+    font-family: royale;
+    color: #592202;
+    margin-bottom: 2rem;
+}
+
+button{
+    border-radius: 10px;
+    width: 25%;
+    height: 38px;
+    background-image: linear-gradient(#EDCD3A, #E19F2F);
+    border-color: #E19F2F;
+    font-family: royale;
+    color: white;
+    text-shadow: -2px 2.5px 3px#592202;
+}
+
+/*area de impressao do código javascript*/
+.resultados-pesquisa{
+    width: 80%;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-resultado{
+    width: 230px;
+    background-color: rgba(255, 255, 255, 0.896);
+    border-radius: 8px;
+    display: flex;
+    margin-top: 2rem;
+    box-shadow: 
+    1px -1px 2px black, 
+    -2px 2px 2px black;
+    transition: transform 0.2s ease-in-out;
+}
+
+.img-card{
+    width: 90px;
+}
+
+/*informações de raridade e tipo*/
+.text-card-resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: xx-small;
+}
+
+.card-name{
+    font-size: small;
+}
+
+.card-rarity{
+    width: 90%;
+    background-color: #1E4E76;
+    border-radius: 6px;
+    padding-left: 3px;
+    color: white;
+}
+
+.card-type{
+    width: 90%;
+    background-color: #CE915A;
+    border-radius: 6px;
+    padding-left: 3px;
+    color: white;
+}
+
+/*informações numéricas sobre as cartas*/
+.card-info{
+    margin: 5px 0 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+footer{
+    color: white;
+    width: 100%;
+    height: 8rem;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( #2BCFE8,#20537E);
+    margin-top: 8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+/*efeito de interação*/
+button:hover{
+    background-image: linear-gradient(#EDCD3A, #c78c27);
+}
+
+/*efeito de interação*/
+.card-resultado:hover{
+    filter: brightness(0.95);
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
